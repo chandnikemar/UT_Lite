@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/vehicleDetectionAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/vehicleDetectionToolbar"
+                android:layout_width="match_parent"
+                app:titleTextColor="@color/white"
+                app:title="Vehical Detection"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                android:layout_height="?attr/actionBarSize">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@+id/vehicleDetectionAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutreasons"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutlocation"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        android:hint="Select Reason">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:inputType="none" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutlocation"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutreasons"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutChild2"
+                        android:hint="Select Location">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:inputType="none" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutChild2"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutlocation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutChild3"
+                        android:hint="Select Location">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView_location_child2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:inputType="none" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutChild3"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutChild2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/clScanRfidTag"
+                        android:visibility="gone"
+                        android:hint="Select Location">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView_location_child3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:inputType="none" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clScanRfidTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutChild3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:visibility="visible">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <RadioGroup
+                                android:id="@+id/rgVehicleDetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbScanRfid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:checked="true"
+                                    android:text="Scan RFID"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rbVrn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Enter VRN"
+                                    android:textSize="15sp" />
+
+                            </RadioGroup>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tv_rfid"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Scan RFID">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/autoCompleteTextView_rfid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="none"
+                                    android:singleLine="true"
+                                    android:textSize="15sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayout_vehicleno"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter Vehicle Number"
+                                android:visibility="gone">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/tvVrn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="10"
+                                    android:maxLines="1"
+                                    android:padding="15dp"
+                                    android:textSize="15sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <Button
+                                android:id="@+id/btnScanRfid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="32dp"
+                                android:backgroundTint="@color/secondaryColor"
+                                android:text="Send"
+                                />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

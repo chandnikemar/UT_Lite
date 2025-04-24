@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UtLite</string>
+    <string-array name="vehicle_detectionreasons">
+        <item>RFID Not Working</item>
+        <item>Power Failure</item>
+        <item>Network Failure</item>
+        <item>New Location</item>
+        <item>Traffic Congestion</item>
+        <item>Other</item>
+    </string-array>
+</resources>

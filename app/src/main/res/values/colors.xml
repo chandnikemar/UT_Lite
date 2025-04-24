@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="secondaryDarkColor">#004f8c</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#9A9A9A</color>
+    <color name="blue">#0054a6</color>
+    <color name="red">#FF0000</color>
+    <color name="light_grey">#FFAAAAAA</color>
+    <color name="lighter_grey">#DADADA</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorPrimary">#074C85</color>
+    <color name="button_unselected">#E0E0E0</color>
+    <color name="button_text_unselected">#000000</color>
+    <color name="button_stroke_unselected">#000000</color>
+    <color name="button_selected">#2962FF</color>
+    <color name="button_text_selected">#FFFFFF</color>
+    <color name="button_stroke_selected">#FFFFFF</color>
+
+
+    <color name="radio_normal_color">#10c007</color>
+    <color name="radio_excess_color">#358bba</color>
+    <color name="radio_shortage_color">#FF0000</color>
+
+    <color name="enough_grey">#EBEBEB</color>
+
+    <color name="lightest_color">#E1EAED</color>
+    <color name="selected_background_color">#074C85</color>
+    <color name="selected_border_color">#000000</color>
+    <color name="unselected_background_color">#FFFFFF</color>
+    <color name="unselected_border_color">#BDBDBD</color>
+
+    <color name="primaryColor">#187abd</color>
+    <color name="primaryLightColor">#5ea9f0</color>
+    <color name="primaryDarkColor">#004f8c</color>
+    <color name="secondaryColor">#f3663f</color>
+    <color name="secondaryLightColor">#ff976c</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="bgcolor">#FFFFFF</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="lightblue">#F8FCFF</color>
+
+</resources>
